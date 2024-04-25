@@ -20,13 +20,13 @@ Before the Nitro upgrade happened, Arbitrum One was running on the Classic stack
 
 Running an Arbitrum One **full node** in **archive mode** lets you access both pre-Nitro and post-Nitro blocks, but it requires you to run **both Classic and Nitro nodes** together. You may not need to do this, depending on your use case:
 
-| Use case                                                                        | Required node type(s)                                     | Docs                                                                                    |
-| ------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Access the **Arbitrum network** without running your own node                   | Fully managed by third-parties, exposed via RPC endpoints | [RPC endpoints and providers](/build-decentralized-apps/reference/01-node-providers.md) |
-| Run an **archive node** for **Arbitrum Sepolia (testnet)** or **Arbitrum Nova** | Full node (Nitro)                                         | [How to run a full node (Nitro)](./running-a-full-node.mdx)                             |
-| Send **post-Nitro** archive requests                                            | Full node (Nitro)                                         | [How to run a full node (Nitro)](./running-a-full-node.mdx)                             |
-| Send **pre-Nitro** archive requests                                             | Full node (Classic)                                       | [How to run a full node (Classic, pre-Nitro)](./running-a-classic-node.mdx)             |
-| Send **post-Nitro** _and_ **pre-Nitro** archive requests                        | Full node (Nitro) _and_ full node (Classic)               | That's what this how-to is for; you're in the right place.                              |
+| Use case                                                                        | Required node type(s)                                     | Docs                                                                                                |
+| ------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Access the **Arbitrum network** without running your own node                   | Fully managed by third-parties, exposed via RPC endpoints | [RPC endpoints and providers](/build-decentralized-apps/reference/01-node-providers.md)             |
+| Run an **archive node** for **Arbitrum Sepolia (testnet)** or **Arbitrum Nova** | Full node (Nitro)                                         | [How to run a full node (Nitro)](/run-arbitrum-node/03-run-full-node.md)                            |
+| Send **post-Nitro** archive requests                                            | Full node (Nitro)                                         | [How to run a full node (Nitro)](/run-arbitrum-node/03-run-full-node.md)                            |
+| Send **pre-Nitro** archive requests                                             | Full node (Classic)                                       | [How to run a full node (Classic, pre-Nitro)](/run-arbitrum-node/more-types/03-run-classic-node.md) |
+| Send **post-Nitro** _and_ **pre-Nitro** archive requests                        | Full node (Nitro) _and_ full node (Classic)               | That's what this how-to is for; you're in the right place.                                          |
 
 ### System requirements
 
@@ -38,9 +38,9 @@ The minimum storage requirements will change over time as the Nitro chains grow 
 
 1. **RAM:** 16GB+ for Nitro and 32GB+ for Classic
 2. **CPU:** 4+ core CPU
-3. **Storage (last updated on January 2024):**
-   - Arbitrum One: 8TB SSD, currently growing at a rate of about .67TB per month
-   - Arbitrum Nova: 1.55TB SSD, currently growing at a rate of about .3TB GB per month
+3. **Storage (last updated on April 2024):**
+   - Arbitrum One: 9.7TB SSD, currently growing at a rate of about 850GB per month
+   - Arbitrum Nova: 4.3TB SSD, currently growing at a rate of about 1.8TB GB per month
 4. **Docker images:** We'll specify these in the below commands; you don't need to manually download them.
    - Latest Docker image for **Arbitrum One Nitro**: <code>@latestNitroNodeImage@</code>
    - Latest Docker image for **Arbitrum One Classic**: <code>@latestClassicNodeImage@</code>
