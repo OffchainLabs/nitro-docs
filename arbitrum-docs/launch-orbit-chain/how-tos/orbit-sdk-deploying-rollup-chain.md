@@ -30,9 +30,10 @@ These contracts are deployed on <a data-quicklook-from="parent-chain">`parent ch
 
 - Rollup contracts
 - <a data-quicklook-from="bridge">Bridge contracts</a>
-- Contracts handling <a data-quicklook-from="fraud-proof">fraud proofs</a> 
 
-Core contracts are the backbone of Arbitrum's <a data-quicklook-from="arbitrum-nitro">Nitro stack</a>, ensuring its robust and efficient operation. You can explore their code in the [nitro-contracts GitHub repository](https://github.com/OffchainLabs/nitro-contracts). 
+- Contracts handling <a data-quicklook-from="fraud-proof">fraud proofs</a>
+
+Core contracts are the backbone of Arbitrum's <a data-quicklook-from="arbitrum-nitro">Nitro stack</a>, ensuring its robust and efficient operation. You can explore their code in the [nitro-contracts GitHub repository](https://github.com/OffchainLabs/nitro-contracts).
 
 ### Rollup deployment parameters
 
@@ -183,7 +184,9 @@ While other configurable parameters exist, they are set to defaults, and it's ge
 
 ### Configuration and deployment helpers
 
-The Orbit SDK provides two APIs, `createRollupPrepareConfig` and `createRollupPrepareTransactionRequest` to facilitate the configuration and deployment of Rollup parameters for an Orbit chain. These APIs simplify the process of setting up and deploying the core contracts necessary for an Orbit chain.
+
+### Configuration and deployment helpers
+
 
 #### **createRollupPrepareConfig API**: 
 
