@@ -6,10 +6,8 @@ user_story: As a developer, I want to understand how to troubleshoot common issu
 content_type: faq
 ---
 
-import FAQStructuredDataJsonLd from '@site/src/components/FAQStructuredData';
-import FAQQuestions from '../partials/_troubleshooting-orbit-partial.md';
+import FAQStructuredData from '@site/src/components/FAQStructuredData';
 
-<FAQStructuredDataJsonLd faqsId="building-orbit" />
-<FAQQuestions />
+<FAQStructuredData faqsId="building-orbit" />
 
 <!-- todo: rename this slug 'faq' instead of 'troubleshooting'; redirect -->

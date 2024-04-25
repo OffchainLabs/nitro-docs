@@ -5,8 +5,6 @@ user_story: As a node runner, I want to review a list of frequently asked questi
 content_type: faq
 ---
 
-import FAQStructuredDataJsonLd from '@site/src/components/FAQStructuredData';
-import FAQQuestions from '../partials/_troubleshooting-nodes-partial.md';
+import FAQStructuredData from '@site/src/components/FAQStructuredData';
 
-<FAQStructuredDataJsonLd faqsId="node-running" />
-<FAQQuestions />
+<FAQStructuredData faqsId="node-running" />

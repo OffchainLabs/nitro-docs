@@ -39,7 +39,6 @@ export default function FAQStructuredData(props) {
   const faqStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    'name': 'FAQs for ' + props.faqsId,
     'mainEntity': faqs.map((faq) => ({
       '@type': 'Question',
       'name': faq.question,
@@ -58,16 +57,15 @@ export default function FAQStructuredData(props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
       />
 
-      {props.renderFaqs &&
-        faqs.map((faq) => (
-          <div data-search-children className="faq-question" key={faq.key} id={faq.key}>
-            <h3>
-              {faq.question}
-              <a className="hash-link" href={'#' + faq.key}></a>
-            </h3>
-            <div dangerouslySetInnerHTML={{ __html: faq.answer }}></div>
-          </div>
-        ))}
+      {faqs.map((faq) => (
+        <div className="faq-question" key={faq.key} id={faq.key}>
+          <h3>
+            {faq.question}
+            <a className="hash-link" href={'#' + faq.key}></a>
+          </h3>
+          <div dangerouslySetInnerHTML={{ __html: faq.answer }}></div>
+        </div>
+      ))}
     </>
   );
 }

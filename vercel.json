@@ -272,7 +272,7 @@
         },
         {
             "source": "/(node-running/reference/software-releases/?)",
-            "destination": "/run-arbitrum-node/arbos-releases/overview",
+            "destination": "/node-running/reference/arbos-software-releases/overview",
             "permanent": false
         },
         {
@@ -382,22 +382,22 @@
         },
         {
             "source": "/docs/running_node",
-            "destination": "/run-arbitrum-node/run-full-node",
+            "destination": "/node-running/how-tos/running-a-full-node",
             "permanent": false
         },
         {
             "source": "/docs/running_nitro_node",
-            "destination": "/run-arbitrum-node/run-full-node",
+            "destination": "/node-running/how-tos/running-a-full-node",
             "permanent": false
         },
         {
             "source": "/docs/running_goerli_nitro_node",
-            "destination": "/run-arbitrum-node/run-full-node",
+            "destination": "/node-running/how-tos/running-a-full-node",
             "permanent": false
         },
         {
             "source": "/docs/running_rinkeby_nitro_node",
-            "destination": "/run-arbitrum-node/run-full-node",
+            "destination": "/node-running/how-tos/running-a-full-node",
             "permanent": false
         },
         {
@@ -422,7 +422,7 @@
         },
         {
             "source": "/docs/installation",
-            "destination": "/run-arbitrum-node/run-full-node",
+            "destination": "/node-running/how-tos/running-a-full-node",
             "permanent": false
         },
         {
@@ -657,7 +657,7 @@
         },
         {
             "source": "/node-running/local-dev-node",
-            "destination": "/run-arbitrum-node/run-local-dev-node",
+            "destination": "/node-running/how-tos/local-dev-node",
             "permanent": false
         },
         {
@@ -682,7 +682,7 @@
         },
         {
             "source": "/node-running/running-a-node",
-            "destination": "/run-arbitrum-node/run-full-node",
+            "destination": "/node-running/how-tos/running-a-full-node",
             "permanent": false
         },
         {

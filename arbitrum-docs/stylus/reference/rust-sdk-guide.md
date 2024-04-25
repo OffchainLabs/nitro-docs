@@ -103,15 +103,16 @@ You can access storage types via getters and setters. For example, the `Contract
 ```rust
 impl Contract {
     /// Gets the owner from storage.
-    pub fn owner(&self) -> Address {
-        self.owner.get()
+    pub fn owner(&self) -> Result<Address, Vec<u8>> {
+        Ok(self.owner.get())
     }
 
     /// Updates the owner in storage
-    pub fn set_owner(&mut self, new_owner: Address) {
-        if msg::sender() == self.owner.get() { // we'll discuss msg::sender later
+    pub fn set_owner(&mut self, new_owner: Address) -> Result<(), Vec<u8>> {
+        if msg::sender() == self.owner()? {  // we'll discuss msg::sender later
             self.owner.set(new_owner);
         }
+        Ok(())
     }
 }
 ```
@@ -130,11 +131,11 @@ Collections like [`StorageVec`][StorageVec] and [`StorageMap`][StorageMap] are d
 
 ```rust
 impl SubStruct {
-   pub fn add_delegate(&mut self, delegate: Address) {
+    pub fn add_delegate(&mut self, delegate: Delegate) -> Result<(), Vec<u8>> {
         self.delegates.push(delegate);
     }
 
-    pub fn track_balance(&mut self, address: Address) {
+    pub fn track_balance(&mut self, address: Address) -> Result<U256, Vec<u8>> {
         self.balances.insert(address, address.balance());
     }
 }

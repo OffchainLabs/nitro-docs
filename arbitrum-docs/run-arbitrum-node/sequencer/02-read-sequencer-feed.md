@@ -64,6 +64,7 @@ type BroadcastFeedMessage struct {
 
 Each `message` conforms to [`arbstate.MessageWithMetadata`](https://github.com/OffchainLabs/nitro/blob/a05f768d774f60468a58a6a94fcc1be18e4d8fae/arbstate/inbox.go#L42):
 
+
 ```
 type MessageWithMetadata struct {
 	Message             *arbos.L1IncomingMessage `json:"message"`
@@ -87,4 +88,5 @@ You can use the [`ParseL2Transactions`](https://github.com/OffchainLabs/nitro/bl
 Using the feed relay, you can also retrieve the `L2 block number` of a message:
 
 - On <a data-quicklook-from="arbitrum-one">Arbitrum One</a>, this can be done by adding the Arbitrum One genesis block number (22207817) to the sequence number of the feed message.
+
 - Note that in the case of <a data-quicklook-from="arbitrum-nova">Arbitrum Nova</a>, the Nitro genesis number is `0`, so it doesn't need to be included when adding to the feed message's sequence number.

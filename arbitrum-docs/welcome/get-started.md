@@ -19,7 +19,7 @@ The Arbitrum suite includes the protocols, chains, services, and SDKs that power
 | [Arbitrum Rollup](/inside-arbitrum-nitro)                         | A **protocol** for scaling Ethereum smart contracts.                                                |
 | [Arbitrum AnyTrust](/inside-anytrust)                             | A **protocol** for scaling Ethereum smart contracts even further, with a mild trust assumption.     |
 | [Arbitrum Nitro](/inside-arbitrum-nitro)                          | The node **software** that codifies the Rollup and AnyTrust protocols.                              |
-| [Arbitrum nodes](/run-arbitrum-node/03-run-full-node.md)          | **Machines** that run Nitro in order to service and/or interact with an Arbitrum chain.             |
+| [Arbitrum nodes](/node-running/how-tos/running-a-full-node)       | **Machines** that run Nitro in order to service and/or interact with an Arbitrum chain.             |
 | [Arbitrum One](https://portal.arbitrum.io/?chains=arbitrum-one)   | A public Rollup **chain**.                                                                          |
 | [Arbitrum Nova](https://portal.arbitrum.io/?chains=arbitrum-nova) | A public AnyTrust **chain**.                                                                        |
 | [Arbitrum bridge](https://bridge.arbitrum.io/)                    | Lets you move ETH and ERC-20 tokens between Ethereum, Arbitrum, and select Orbit chains.            |
@@ -30,11 +30,11 @@ The Arbitrum suite includes the protocols, chains, services, and SDKs that power
 
 **Users** interact with Arbitrum either through the Arbitrum bridge or by using dApps that have been deployed to an Arbitrum chain.
 
-| Resource                                                 | Description                                                                              |
-| -------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [Arbitrum bridge](https://bridge.arbitrum.io/)           | Lets you move ETH and ERC-20 tokens between Ethereum, Arbitrum, and select Orbit chains. |
-| [Arbitrum Portal](https://portal.arbitrum.io/)           | A directory of dApps on Arbitrum.                                                        |
-| [Quickstart (bridge)](/arbitrum-bridge/01-quickstart.md) | Provides step-by-step instructions for first-time bridge users.                          |
+| Resource                                       | Description                                                                              |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [Arbitrum bridge](https://bridge.arbitrum.io/) | Lets you move ETH and ERC-20 tokens between Ethereum, Arbitrum, and select Orbit chains. |
+| [Arbitrum Portal](https://portal.arbitrum.io/) | A directory of dApps on Arbitrum.                                                        |
+| [Quickstart (bridge)](/getting-started-users)  | Provides step-by-step instructions for first-time bridge users.                          |
 
 ## Arbitrum for developers
 

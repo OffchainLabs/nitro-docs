@@ -284,16 +284,6 @@ const sidebars = {
               id: 'launch-orbit-chain/how-tos/customize-stf',
               label: `Customize your chain's behavior`,
             },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/orbit-chain-finality',
-              label: `Configure delayed inbox finality`,
-            },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/manage-fee-collectors',
-              label: `Manage the fee collectors`,
-            },
           ],
         },
         {
@@ -304,9 +294,11 @@ const sidebars = {
             {
               type: 'html',
               value:
-                '<a class="menu__link menu__list-item" href="/run-arbitrum-node/arbos-releases/overview">ArbOS software releases</a>',
+                '<a class="menu__link menu__list-item" href="/node-running/reference/arbos-software-releases/overview">ArbOS software releases</a>',
               // q: why use an anchor html tag here?
-              // a: see note at end of file
+              // a: because this page lives in multiple sidebar sections, we pick one to be the "canonical" location for the page in the sidebar
+              //    if we link to them both via id or standard href, multiple sections of the sidebar will be opened at once when the user visits this page; we don't want that
+              //    if we use a fully qualified link, localhost won't work
             },
             {
               type: 'doc',
@@ -354,60 +346,18 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'launch-orbit-chain/orbit-sdk-deploying-orbit-chain',
+          label: `Orbit SDK`,
+        },
+        {
+          type: 'doc',
           id: 'launch-orbit-chain/concepts/public-preview-expectations',
           label: 'Public preview',
         },
         {
           type: 'doc',
-          id: 'launch-orbit-chain/infra-options-orbit-chains',
-          label: 'Third-party infrastructure providers',
-        },
-        {
-          type: 'doc',
           id: 'launch-orbit-chain/troubleshooting-building-orbit',
           label: 'FAQ',
-        },
-        {
-          type: 'category',
-          label: 'Orbit SDK',
-          collapsed: true,
-          items: [
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/orbit-sdk-introduction',
-              label: `Introduction`,
-            },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/orbit-sdk-deploying-rollup-chain',
-              label: `Rollup Orbit Deployment`,
-            },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/orbit-sdk-deploying-anytrust-chain',
-              label: `AnyTrust Orbit Deployment`,
-            },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/orbit-sdk-deploying-custom-gas-token-chain',
-              label: `Custom Gas Token Orbit Deployment`,
-            },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/orbit-sdk-preparing-node-config',
-              label: `Node Config Generation`,
-            },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/orbit-sdk-deploying-token-bridge',
-              label: `Token bridge deployment`,
-            },
-            {
-              type: 'doc',
-              id: 'launch-orbit-chain/how-tos/orbit-sdk-configuring-orbit-chain',
-              label: `Orbit Chain Configuration`,
-            },
-          ],
         },
       ],
     },
@@ -510,25 +460,25 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'run-arbitrum-node/overview',
+          id: 'node-running/gentle-introduction-run-node',
           label: 'Overview',
         },
         {
           type: 'doc',
-          id: 'run-arbitrum-node/quickstart',
+          id: 'node-running/quickstart-running-a-node',
           label: 'Quickstart',
         },
         {
           type: 'doc',
-          id: 'run-arbitrum-node/run-full-node',
+          id: 'node-running/how-tos/running-a-full-node',
           label: 'Run a full node',
         },
         {
           type: 'doc',
-          id: 'run-arbitrum-node/run-local-dev-node',
+          id: 'node-running/how-tos/local-dev-node',
           label: 'Run a local dev node',
         },
-        { 
+        {
           type: 'html',
           value:
             '<a class="menu__link menu__list-item" href="/node-running/how-tos/running-an-orbit-node">Run a full Orbit node <span class="other-section-icon">↑</span></a>',
@@ -537,27 +487,27 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'run-arbitrum-node/l1-ethereum-beacon-chain-rpc-providers',
+          id: 'node-running/reference/ethereum-beacon-rpc-providers',
           label: 'L1 Ethereum RPC providers',
         },
         {
           type: 'category',
-          label: 'ArbOS software releases',
+          label: 'Customize your chain',
           collapsed: true,
           items: [
             {
               type: 'doc',
-              id: 'run-arbitrum-node/arbos-releases/overview',
+              id: 'node-running/reference/arbos-software-releases/overview',
               label: 'Overview',
             },
             {
               type: 'doc',
-              id: 'run-arbitrum-node/arbos-releases/arbos20',
+              id: 'node-running/reference/arbos-software-releases/arbos20',
               label: 'ArbOS 20 Atlas',
             },
             {
               type: 'doc',
-              id: 'run-arbitrum-node/arbos-releases/arbos11',
+              id: 'node-running/reference/arbos-software-releases/arbos11',
               label: 'ArbOS 11',
             },
           ],
@@ -669,18 +619,18 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'arbitrum-bridge/quickstart',
+          id: 'getting-started-users',
           label: 'Quickstart',
         },
         {
           type: 'doc',
-          id: 'arbitrum-bridge/usdc-arbitrum-one',
-          label: 'USDC on Arbitrum One',
+          id: 'for-users/troubleshooting-users',
+          label: 'Troubleshooting',
         },
         {
           type: 'doc',
-          id: 'arbitrum-bridge/troubleshooting',
-          label: 'Troubleshooting',
+          id: 'bridge-tokens/concepts/usdc-concept',
+          label: 'USDC on Arbitrum One',
         },
       ],
     },
@@ -817,47 +767,6 @@ const sidebars = {
                   type: 'doc',
                   id: 'proving/wavm-modules',
                   label: 'WAVM modules',
-                },
-              ],
-            },
-            {
-              type: 'category',
-              label: 'The BOLD dispute protocol',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'bold/bold-gentle-introduction',
-                  label: 'A gentle introduction',
-                },
-                {
-                  type: 'link',
-                  href: 'https://github.com/offchainlabs/bold-validator-starter-kit',
-                  label: 'Deploy a validator on testnet',
-                },
-                {
-                  type: 'link',
-                  href: 'https://arxiv.org/abs/2404.10491',
-                  label: 'BOLD Whitepaper',
-                },
-                {
-                  type: 'link',
-                  href: 'https://github.com/OffchainLabs/bold/blob/main/docs/research-specs/TechnicalDeepDive.pdf',
-                  label: 'Technical deep dive',
-                },
-                {
-                  type: 'link',
-                  href: 'https://github.com/OffchainLabs/bold/blob/main/docs/research-specs/Economics.pdf',
-                  label: 'Economics of disputes',
-                },
-                {
-                  type: 'link',
-                  href: 'https://github.com/OffchainLabs/bold',
-                  label: 'Specification on Github',
-                },
-                {
-                  type: 'doc',
-                  id: 'bold/concepts/public-preview-expectations',
-                  label: 'Public preview',
                 },
               ],
             },
